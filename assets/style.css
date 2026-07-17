@@ -283,22 +283,35 @@ ul { list-style: none; }
 }
 .cat-card:hover { transform: translateY(-5px); box-shadow: 0 16px 30px rgba(28,43,26,.12); }
 .cat-card-top { height: 7px; }
-.cat-card-body { padding: 24px; position: relative; }
+.cat-card-body { padding: 24px; position: relative; overflow: hidden; }
+.cat-decor {
+  position: absolute;
+  right: -22px;
+  bottom: -22px;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  opacity: .14;
+  transform: rotate(-14deg);
+  pointer-events: none;
+}
 .cat-icon {
   width: 56px;
   height: 56px;
-  border-radius: 18px;
+  border-radius: 50%;
+  background: var(--warm-wh) !important;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  box-shadow: 0 6px 16px rgba(28,43,26,.10), inset 0 0 0 1px rgba(255,255,255,.5);
+  box-shadow: 0 6px 16px rgba(28,43,26,.14);
   position: relative;
+  z-index: 1;
   transition: transform .3s ease, box-shadow .3s ease;
 }
 .cat-card:hover .cat-icon {
-  transform: scale(1.08) rotate(-4deg);
-  box-shadow: 0 10px 22px rgba(28,43,26,.16), inset 0 0 0 1px rgba(255,255,255,.6);
+  transform: scale(1.1) rotate(-6deg);
+  box-shadow: 0 10px 24px rgba(28,43,26,.20);
 }
 .cat-name {
   font-family: var(--display);
