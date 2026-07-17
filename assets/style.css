@@ -112,6 +112,10 @@ ul { list-style: none; }
   color: rgba(247,243,236,.55);
 }
 .nav-sub-inner a:hover { color: var(--gold); }
+.nav-sub-inner a.trending-link {
+  color: var(--terra);
+  font-weight: 700;
+}
 
 /* ── EYEBROW / LABELS ── */
 .eyebrow {
@@ -273,7 +277,15 @@ ul { list-style: none; }
 .cat-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(28,43,26,.08); }
 .cat-card-top { height: 6px; }
 .cat-card-body { padding: 22px; }
-.cat-icon { font-size: 1.8rem; margin-bottom: 10px; }
+.cat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
 .cat-name {
   font-family: var(--display);
   font-size: 20px;
