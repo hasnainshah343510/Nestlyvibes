@@ -276,13 +276,14 @@ ul { list-style: none; }
 .cat-card {
   background: var(--warm-wh);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 14px;
   overflow: hidden;
-  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 2px 10px rgba(28,43,26,.05);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
-.cat-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(28,43,26,.08); }
-.cat-card-top { height: 6px; }
-.cat-card-body { padding: 22px; }
+.cat-card:hover { transform: translateY(-5px); box-shadow: 0 16px 30px rgba(28,43,26,.12); }
+.cat-card-top { height: 7px; }
+.cat-card-body { padding: 24px; position: relative; }
 .cat-icon {
   width: 56px;
   height: 56px;
