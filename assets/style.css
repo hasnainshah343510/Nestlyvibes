@@ -109,11 +109,14 @@ ul { list-style: none; }
 }
 .nav-sub-inner a {
   font-size: 12px;
-  color: rgba(247,243,236,.55);
+  color: var(--terra);
+  opacity: .85;
+  font-weight: 500;
 }
-.nav-sub-inner a:hover { color: var(--gold); }
+.nav-sub-inner a:hover { color: var(--gold); opacity: 1; }
 .nav-sub-inner a.trending-link {
   color: var(--terra);
+  opacity: 1;
   font-weight: 700;
 }
 
@@ -280,11 +283,18 @@ ul { list-style: none; }
 .cat-icon {
   width: 56px;
   height: 56px;
-  border-radius: 16px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 16px rgba(28,43,26,.10), inset 0 0 0 1px rgba(255,255,255,.5);
+  position: relative;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.cat-card:hover .cat-icon {
+  transform: scale(1.08) rotate(-4deg);
+  box-shadow: 0 10px 22px rgba(28,43,26,.16), inset 0 0 0 1px rgba(255,255,255,.6);
 }
 .cat-name {
   font-family: var(--display);
