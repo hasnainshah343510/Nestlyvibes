@@ -65,6 +65,9 @@ ul { list-style: none; }
   display: flex;
   align-items: baseline;
   gap: 6px;
+  background: var(--warm-wh);
+  padding: 8px 16px;
+  border-radius: 10px;
 }
 .nav-logo em {
   font-style: italic;
